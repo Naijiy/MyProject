@@ -43,7 +43,7 @@ The final way to mark a binary as restricted is by telling the linker to add new
 参考链接：
 > [https://pewpewthespells.com/blog/blocking_code_injection_on_ios_and_os_x.html](https://pewpewthespells.com/blog/blocking_code_injection_on_ios_and_os_x.html)
 
-### 2. 破解
+### `2. 破解`
 #### hopper分析（以**商家iOS客户端为例）
 
 ptrace 方法
