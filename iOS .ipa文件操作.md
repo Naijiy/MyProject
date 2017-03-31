@@ -61,6 +61,3 @@ static void __attribute__((constructor)) initialize(void)
 2. [http://gcc.gnu.org/onlinedocs/gcc/Function-Attributes.html](http://gcc.gnu.org/onlinedocs/gcc/Function-Attributes.html)  
 3. [http://www.cnblogs.com/astwish/p/3460618.html](http://www.cnblogs.com/astwish/p/3460618.html)  
 4. [http://www.cplusplus.com/forum/general/62588/](http://www.cplusplus.com/forum/general/62588/)
-<center> end </center>
-
-
