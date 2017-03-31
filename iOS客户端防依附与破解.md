@@ -118,7 +118,7 @@ hook C语言方法
 >
 ```
 void MSHookFunction(void *symbol, void *hook, void **old);
->
+
 void *(*oldConnect)(int, const sockaddr *, socklen_t);
 void *newConnect(int socket, const sockaddr *address, socklen_t length)
  {
@@ -132,10 +132,10 @@ void *newConnect(int socket, const sockaddr *address, socklen_t length)
             return oldConnect(socket, &copy, length);
         }
     }
->
+
     return oldConnect(socket, address, length);
 }
->
+
 MSHookFunction(&connect, &newConnect, &oldConnect);
 ```
 
@@ -148,9 +148,9 @@ hook C++语言方法
 >
 ```
 void MSHookMessageEx(Class _class, SEL message, IMP hook, IMP *old);
->
+
 NSString *(*oldDescription)(id self, SEL _cmd);
->
+
 // implicit self and _cmd are explicit with IMP ABI
 NSString *newDescription(id self, SEL _cmd) 
 {
@@ -158,7 +158,7 @@ NSString *newDescription(id self, SEL _cmd)
     description = [description stringByAppendingString:@"!"];
     return description;
 }
->
+
 MSHookMessageEx(
     [NSObject class], @selector(description),
     &newDescription, &oldDescription
