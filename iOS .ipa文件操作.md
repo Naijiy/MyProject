@@ -1,4 +1,4 @@
-## <center> .ipa 文件操作 </center>
+## <center> iOS .ipa 文件操作 </center>
 
 ### 解压+签名+打包+安装
 #### 解压 
