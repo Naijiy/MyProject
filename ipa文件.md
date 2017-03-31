@@ -1,21 +1,21 @@
-##<center> .ipa 文件操作 </center>
+## <center> .ipa 文件操作 </center>
 
 ### 解压+签名+打包+安装
-##### 解压 
+#### 解压 
 1. 新建文件夹  
 2. 助手下载越狱版本 `xyz.ipa`  
 3. 打开终端执进入文件夹，行命令 `unzip /path/xyz.ipa`  
-<font color=red>注：`xyz.app` 文件位于 `Payload` 文件夹中</font>
+<font color=red> 注：`xyz.app` 文件位于 `Payload` 文件夹中 </font>
 
-#####   签名
+####   签名
 1. 执行命令 `security find-identity -v -p codesigning`，获取电脑上所有的签名证书  
 2. 执行命令 `codesign -f -s "iPhone Distribution: xxxxxxxxxxxxxxxxx" xyz.app` 重新签名 
 
-##### 打包 
+#### 打包 
 执行命令 `zip -r xyz.ipa Payload/` 重新打包成 .ipa 文件  
 <font color=red>注：一定要将 `Payload` 整个文件夹打包成 .ipa</font>
 
-##### 安装
+#### 安装
 需要借助 [impactor](http://www.cydiaimpactor.com/)
 
 1. 手机数据线连接电脑
