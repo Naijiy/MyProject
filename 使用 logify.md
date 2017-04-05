@@ -1,5 +1,3 @@
-<center> 使用 logify </center> 
-----
 #### 使用 logify
 
 ```
@@ -68,5 +66,3 @@ $ /opt/theos/bin/logify.pl Header/RegisterViewController.h >> Tweak.xm
 
 @end
 ```
-
-
