@@ -1,6 +1,6 @@
-<center>iOS 10.2 越狱环境部署</center>
-----
+
 iOS 10.2 非完美越狱，越狱失效后需重在pp助手中再次一键越狱，随后删掉手机上老版本的越狱助手，并启动新安装的越狱助手重新越狱。<font color=red> 不要在手机上安装 OpenSSH ！！</font>
+
 
 #### ssh 失败
 1. 在 `Cydia` 中安装 `Filza`
